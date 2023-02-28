@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-const deletephoto = (props: any) => {
+const Deletephoto = (props: any) => {
   const passwordRef = useRef<HTMLInputElement>(null);
   const errorRef = useRef<HTMLInputElement>(null);
 
@@ -67,4 +67,4 @@ const deletephoto = (props: any) => {
   );
 };
 
-export default deletephoto;
+export default Deletephoto;

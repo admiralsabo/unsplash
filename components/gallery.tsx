@@ -1,4 +1,6 @@
-const gallery = ({
+import Image from "next/image";
+
+const Gallery = ({
   data,
   setPhotoId,
   setIsDeletePhoto,
@@ -13,11 +15,12 @@ const gallery = ({
         data.map((photo: any, index: any) => {
           return (
             <div
+              key={`photo-${index}`}
               className={`group w-full relative gallery ${
                 index % 2 ? "sm:row-span-2 " : ""
               }`}
             >
-              <img
+              <Image
                 src={photo.url}
                 className={`h-full w-full object-cover object-center  rounded-2xl`}
                 alt=""
@@ -41,4 +44,4 @@ const gallery = ({
   );
 };
 
-export default gallery;
+export default Gallery;

@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 
-const addphoto = (props: any) => {
+const Addphoto = (props: any) => {
   const labelRef = useRef<HTMLInputElement>(null);
   const urlRef = useRef<HTMLInputElement>(null);
   console.log(labelRef);
@@ -65,4 +65,4 @@ const addphoto = (props: any) => {
   );
 };
 
-export default addphoto;
+export default Addphoto;
