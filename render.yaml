@@ -1,10 +1,9 @@
-Uncomment the following to deploy this app as a static site on render
 - type: web
   name: unsplash
   env: static
   buildCommand: yarn; yarn build; yarn next export
   staticPublishPath: out
-  pullRequestPreviewsEnabled: true     # optional
+  pullRequestPreviewsEnabled: true # optional
   envVars:
-  - key: NODE_ENV
-    value: production
+    - key: NODE_ENV
+      value: production
