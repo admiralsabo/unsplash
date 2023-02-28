@@ -24,6 +24,7 @@ const Gallery = ({
                 src={photo.url}
                 className={`h-full w-full object-cover object-center  rounded-2xl`}
                 alt=""
+                fill
               />
               <div className="opacity-0 rounded-2xl bg-black  group-hover:opacity-70 duration-500 h-full  absolute top-0 left-0 right-0  flex flex-col justify-between">
                 <button
